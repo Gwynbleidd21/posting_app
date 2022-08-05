@@ -1,0 +1,45 @@
+{% extends 'base.html' %} {% block content %}
+    <style>
+    .card {
+        box-shadow: 0 16px 48px #E3E7EB;
+    }
+
+</style>
+    <br/></br/>
+    <div class="container">
+        <div class="col-md-8 offset-md-2">
+        <div class="list-group">
+{#        {% if query %}#}
+{#               <h2>#}
+{#               {% with results|length as total_results %}#}
+{#               Found {{ total_results }} result{{ total_results|pluralize }}#}
+{#               {% endwith %}#}
+{#               </h2>#}
+{#            {% for object in results %}#}
+{#                <div class="card mb-4">#}
+{#                    <div class="card-body">#}
+{#                        <h2 class="card-title">{{ object.title }}</h2>#}
+{#                        <p class="card-text text-muted h6">{{ object.author }}</p>#}
+{#                        <p class="card-text">{{object.body|slice:":200" }}</p>#}
+{#                    </div>#}
+{#                </div>#}
+{#                {% empty %}#}
+{#                <h3>No results found.</h3>#}
+{#            {% endfor %}#}
+{#        {% endif %}#}
+        <form action="{% url 'create_prispevok' %}"  class="form-inline" method = "PUT">
+            {% csrf_token %}
+            <input type = "text" style = "margin-left:20%;"
+                  placeholder = "Prispevok title" name = "title" />
+            <input type = "text" style = "margin-left:20%;"
+                  placeholder = "Prispevok body" name = "body" />
+            <button type="submit" class="btn btn-dark btn-rounded" style="margin: 20px;">Create</button>
+        </form>
+            <form action="{% url 'home' %}" class="form-inline" method="get">
+        <button type="submit" class="btn btn-dark btn-rounded" style="margin: 20px;">Back</button>
+        </form>
+    </div>
+    </div>
+    </div>
+
+{% endblock content %}
