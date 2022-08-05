@@ -4,7 +4,6 @@
     <list default="true" id="7ebd1a2c-3390-4c19-9794-751f411e4295" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/prispevok/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/prispevok/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +102,7 @@
       <workItem from="1659431869969" duration="1989000" />
       <workItem from="1659433871634" duration="49176000" />
       <workItem from="1659699153786" duration="16367000" />
-      <workItem from="1659729353955" duration="1243000" />
+      <workItem from="1659729353955" duration="1700000" />
     </task>
     <servers />
   </component>
@@ -132,6 +131,11 @@
           <url>file://$PROJECT_DIR$/app/prispevok/views.py</url>
           <line>43</line>
           <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/prispevok/serializers.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
