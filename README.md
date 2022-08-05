@@ -1,5 +1,5 @@
-# Post app api
-Django web app for working with posts via external API.
+# Posting app
+Django restful web app for working with posts via external API.
 
 ## Prerequisites
 Have docker and docker-compose installed on your machine.
@@ -27,12 +27,5 @@ Navigate to url for rest API interface
 ```commandline
 http://127.0.0.1:8000/api/docs/
 ```
-First step is to create a user and then create auth token for the user.
-
-Once token is created, the user needs to be authorized by tokenAuth method via Authorize
-```commandline
-Token generatedtoken
-``` 
-
-API is documented automatically with DRF
+First step is to create a user and authenticate with it.
 
